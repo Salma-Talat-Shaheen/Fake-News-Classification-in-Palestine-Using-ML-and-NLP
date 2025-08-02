@@ -9,6 +9,9 @@
 This project aims to detect fake news in Palestine using Natural Language Processing (NLP) techniques. It processes Arabic news articles, extracts features, and trains machine learning models to classify news as real or fake. The best-performing model, XGBoost with TF-IDF features (text, platform, and numerical), achieved an accuracy of 95.05%, showing strong potential for combating misinformation in Arabic media.
 
 ## Project Structure
+<p align="center">
+  <img src="https://github.com/Salma-Talat-Shaheen/Fake-News-Classification-in-Palestine-Using-ML-and-NLP/blob/main/flowCharts/modelFlowCharts.jpg" width="600" height="400" />
+</p>
 The project is implemented in a Jupyter Notebook (`fakeNewsClassification.ipynb`) with the following key sections:
 
 1. **Setup and Data Loading**:
@@ -16,10 +19,16 @@ The project is implemented in a Jupyter Notebook (`fakeNewsClassification.ipynb`
    - Loads a dataset of Arabic news articles with columns: `Id`, `date`, `platform`, `title`, `News content`, and `Label` (Real/Fake).
 
 2. **Data Preprocessing**:
+   <p align="center">
+  <img src="https://github.com/Salma-Talat-Shaheen/Fake-News-Classification-in-Palestine-Using-ML-and-NLP/blob/main/flowCharts/Preprocessing.jpg" width="600" height="400" />
+</p>
    - Cleans and preprocesses Arabic text using tokenization, stopword removal, and normalization with Camel Tools and Farasa stemmer.
    - Handles platform encoding and numerical feature extraction.
 
 3. **Feature Extraction**:
+   <p align="center">
+  <img src="https://github.com/Salma-Talat-Shaheen/Fake-News-Classification-in-Palestine-Using-ML-and-NLP/blob/main/flowCharts/featureExtraction.jpg" width="600" height="400" />
+</p>
    - Uses TF-IDF for text representation.
    - Implements Word2Vec (CBOW and Skip-gram) for word embeddings.
    - Experiments with AraBERT embeddings for advanced text representation.
