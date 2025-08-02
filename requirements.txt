@@ -1,0 +1,20 @@
+# Required Python libraries for the Arabic Fake News Classification Project
+nltk
+camel-tools
+farasapy
+arabicstopwords
+gensim
+emoji
+num2words
+googletrans==4.0.0-rc1
+arabic_reshaper
+python-bidi
+wordcloud
+matplotlib
+seaborn
+pandas
+numpy
+scikit-learn
+xgboost
+transformers
+torch
