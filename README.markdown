@@ -1,5 +1,10 @@
 # Fake News Classification in Palestine Project
 
+<p align="center">
+  <img src="https://github.com/Salma-Talat-Shaheen/Fake-News-Classification-in-Palestine-Using-ML-and-NLP/blob/main/flowCharts/NLP_GroupC_FinalTask%20.png" width="600" height="400" />
+</p>
+
+
 ## Overview
 This project aims to detect fake news in Palestine using Natural Language Processing (NLP) techniques. It processes Arabic news articles, extracts features, and trains machine learning models to classify news as real or fake. The best-performing model, XGBoost with TF-IDF features (text, platform, and numerical), achieved an accuracy of 95.05%, showing strong potential for combating misinformation in Arabic media.
 
