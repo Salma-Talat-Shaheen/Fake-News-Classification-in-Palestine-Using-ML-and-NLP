@@ -1,7 +1,7 @@
-# Arabic Fake News Classification Project
+# Fake News Classification in Palestine Project
 
 ## Overview
-This project aims to detect fake news in Arabic using Natural Language Processing (NLP) techniques. It processes Arabic news articles, extracts features, and trains machine learning models to classify news as real or fake. The best-performing model, XGBoost with TF-IDF features (text, platform, and numerical), achieved an accuracy of 95.05%, showing strong potential for combating misinformation in Arabic media.
+This project aims to detect fake news in Palestine using Natural Language Processing (NLP) techniques. It processes Arabic news articles, extracts features, and trains machine learning models to classify news as real or fake. The best-performing model, XGBoost with TF-IDF features (text, platform, and numerical), achieved an accuracy of 95.05%, showing strong potential for combating misinformation in Arabic media.
 
 ## Project Structure
 The project is implemented in a Jupyter Notebook (`fakeNewsClassification.ipynb`) with the following key sections:
@@ -39,14 +39,14 @@ The project is implemented in a Jupyter Notebook (`fakeNewsClassification.ipynb`
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
-   cd <your-repo-name>
+   git clone https://github.com/Salma-Talat-Shaheen/Fake-News-Classification-in-Palestine-Using-ML-and-NLP.git
+   cd Fake-News-Classification-in-Palestine-Using-ML-and-NLP
    ```
 2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Ensure you have the dataset (`real_fake_news.csv`) in the project directory or a mounted Google Drive folder if using Colab.
+3. Ensure you have the dataset (`merged_cleaned.xlsx`) in the project directory or a mounted Google Drive folder if using Colab.
 
 ## Usage
 1. Open the `fakeNewsClassification.ipynb` notebook in Jupyter or Google Colab.
@@ -54,10 +54,11 @@ The project is implemented in a Jupyter Notebook (`fakeNewsClassification.ipynb`
 3. Run all cells sequentially to preprocess data, train models, and test predictions.
 4. Use the `predict_news` function to classify new articles by providing text and platform inputs. Example:
    ```python
-   sample_text = "Your news article text here"
+     sample_text = """
+   مسؤولة إغاثة: وضع مستشفيات قطاع غزة كارثي المتحدثة باسم الاتحاد الدولي لجمعيات الهلال والصليب الأحمر للجزيرة: وضع مستشفيات قطاع غزة كارثي. نقص كبير بعدد سيارات الإسعاف العاملة في غزة. انعدام الوقود يعني غياب الحياة تماما بغزة. انعدام الوقود بمستشفيات غزة يعني انعدام فرص الحياة. فقدنا العديد من موظفينا بسبب القصف على غزة."""                                                                                                            
    sample_platform = "الجزيرة"
    print(predict_news(sample_text, sample_platform, models['XGBoost'], w2v_skipgram_model, encoder, num_features_cols, convert_eng_arb))
-   ```
+
 
 ## Sample Predictions
 The notebook tests the model on three sample news articles:
